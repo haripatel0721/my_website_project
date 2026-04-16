@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crust & Co - Authentic Wood-Fired Pizza">
+    <title>Crust & Co | Wood-Fired Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Crust & Co</div>
+        
+        <!-- Accessible Mobile Menu Button -->
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav id="primary-navigation" class="primary-navigation">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#location">Location</a></li>
+                <li class="mobile-only"><button class="order-btn" aria-label="Order Online">Order Online</button></li>
+            </ul>
+        </nav>
+        
+        <button class="order-btn desktop-only" id="nav-order-btn" aria-label="Order Online">Order Online</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Authentic Neapolitan Pizza</h1>
+            <p>Charred to perfection in our 900-degree brick oven.</p>
+            <a href="#menu" class="cta-btn" id="hero-menu-btn" aria-label="View Full Menu">View Full Menu</a>
+        </div>
+    </section>
+
+    <!-- Featured Menu Section -->
+    <section id="menu" class="featured-menu">
+        <h2>Our Menu</h2>
+
+        <h3 class="category-title">Wood-Fired Pizzas</h3>
+        <div class="menu-grid">
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="The Classic Margherita Pizza"></div>
+                <div class="card-content">
+                    <h3>The Classic Margherita</h3>
+                    <p>San Marzano tomato sauce, fresh mozzarella di bufala, basil, and extra virgin olive oil.</p>
+                    <span class="price">$16</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Spicy Diavola Pizza"></div>
+                <div class="card-content">
+                    <h3>Spicy Diavola</h3>
+                    <p>Spicy Calabrian chili paste, mozzarella, artisan pepperoni, and a drizzle of hot honey.</p>
+                    <span class="price">$19</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Truffle Mushroom Pizza"></div>
+                <div class="card-content">
+                    <h3>Truffle Mushroom</h3>
+                    <p>Roasted wild mushrooms, fontina cheese, thyme, and white truffle oil. (White pie)</p>
+                    <span class="price">$21</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1555072956-7758afb20e8f?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Prosciutto and Arugula Pizza"></div>
+                <div class="card-content">
+                    <h3>Prosciutto & Arugula</h3>
+                    <p>Mozzarella, aged prosciutto di Parma, fresh peppery arugula, and shaved parmigiano.</p>
+                    <span class="price">$22</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Quattro Formaggi Pizza"></div>
+                <div class="card-content">
+                    <h3>Quattro Formaggi</h3>
+                    <p>A rich blend of mozzarella, gorgonzola, fontina, and parmigiano-reggiano. (White pie)</p>
+                    <span class="price">$20</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="category-title">Starters & Salads</h3>
+        <div class="menu-grid">
+            <div class="menu-card" tabindex="0">
+                <!-- Switched to Wikimedia Commons static image for Garlic Bread -->
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1619535860434-ba1d8fa12536?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Wood-Fired Garlic Bread"></div>
+                <div class="card-content">
+                    <h3>Wood-Fired Garlic Bread</h3>
+                    <p>House-made dough baked with roasted garlic butter, fresh parsley, served with marinara.</p>
+                    <span class="price">$8</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1529312266912-b33cfce2eefd?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Burrata Caprese"></div>
+                <div class="card-content">
+                    <h3>Burrata Caprese</h3>
+                    <p>Creamy fresh burrata, heirloom tomatoes, basil pesto, and a sweet balsamic reduction.</p>
+                    <span class="price">$14</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Classic Caesar Salad"></div>
+                <div class="card-content">
+                    <h3>Classic Caesar</h3>
+                    <p>Crisp romaine hearts, house-made croutons, shaved parmesan, and traditional anchovy dressing.</p>
+                    <span class="price">$12</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Oven Baked Ziti"></div>
+                <div class="card-content">
+                    <h3>Wood-Oven Baked Ziti</h3>
+                    <p>Ziti pasta baked in our wood oven with ricotta, marinara, mozzarella, and fresh basil.</p>
+                    <span class="price">$16</span>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="category-title">Desserts & Drinks</h3>
+        <div class="menu-grid">
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Nutella Pizza"></div>
+                <div class="card-content">
+                    <h3>Nutella Pizza</h3>
+                    <p>Warm, wood-fired dough crust smothered in Nutella, powdered sugar, and fresh strawberries.</p>
+                    <span class="price">$11</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Italian Margarita"></div>
+                <div class="card-content">
+                    <h3>Italian Margarita</h3>
+                    <p>A twist on a classic: premium tequila, amaretto, fresh lime juice, with a salted rim.</p>
+                    <span class="price">$12</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="House Red Wine"></div>
+                <div class="card-content">
+                    <h3>House Montepulciano</h3>
+                    <p>A robust Italian red wine with notes of cherry and plum. Pairs perfectly with pizza.</p>
+                    <span class="price">$10</span>
+                </div>
+            </div>
+            <div class="menu-card" tabindex="0">
+                <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80');" role="img" aria-label="Artisanal Sodas"></div>
+                <div class="card-content">
+                    <h3>Artisanal Italian Sodas</h3>
+                    <p>Refreshing sparkling beverages in Blood Orange, Lemon, or Pomegranate flavors.</p>
+                    <span class="price">$5</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="about" class="story-section">
+        <div class="story-container">
+            <div class="story-text">
+                <h2>Our Story</h2>
+                <p>Born from a passion for authentic Italian traditions, Crust & Co started as a humble idea between friends. We believe that great pizza requires only three things: simple ingredients, intense heat, and a lot of heart.</p>
+                <p>Our dough is fermented for 48 hours and topped with ingredients sourced directly from local farmers and Italian artisans. Every pie is baked in our custom-built wood-fired oven, resulting in that perfectly blistered, airy crust.</p>
+            </div>
+            <div class="story-image" style="background-image: url('https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=800&q=80');" role="img" aria-label="Chef making pizza dough"></div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <h2>Find Us</h2>
+        <div class="location-container">
+            <div class="location-info">
+                <h3>Crust & Co</h3>
+                <p><strong>Address:</strong><br>123 Culinary Lane<br>Houston, TX 77002</p>
+                <p><strong>Hours:</strong><br>Tuesday - Thursday: 4 PM - 9 PM<br>Friday - Sunday: 4 PM - 10 PM<br>Monday: Closed</p>
+                <p><strong>Contact:</strong><br>(555) 123-4567<br>hello@crustandco.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Crust & Co</h3>
+            <p>&copy; 2026 Crust & Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
